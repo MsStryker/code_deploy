@@ -1,0 +1,13 @@
+version: 0.1
+os: linux
+files:
+  - source: /code_deploy
+    destination: /home/ec2-user/www/code_deploy/code_deploy
+  - source: /LICENSE
+    destination: /home/ec2-user/www/code_deploy/LICENSE
+  - source: /requirements.txt
+permissions:
+  - object: /home/ec2-user/www
+    pattern: "**"
+    owner: ec2-user
+    group: ec2-user
