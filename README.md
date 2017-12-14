@@ -1,4 +1,4 @@
-# code_deploy
+# CodeDeploy Setup
 
 Simple code deploy application.
 
