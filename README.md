@@ -28,7 +28,15 @@ Create a `CodeDeploy<AppName>` policy following the `aws/policy_template.json`.
 
 The user should probably be something like `GitHub<AppName>`. Store the AWS access key and secret access key in a safe place. If you lose them, you can always create new ones and expire the old ones.
 
-## Step 6: Add AWS CodeDeploy to GitHub
+## Step 6: Generate Token in GitHub
+
+Go to the [following](https://github.com/settings/tokens/new) and create a token repo:status and repo_deployment. Copy this token for the next step.
+
+## Step 7: Add AWS CodeDeploy to GitHub
 
 Got to GitHub > "your project" > Settings > Integrations & services and add the configurations from above.
+
+## Step 8: GitHub Auto-Deployment
+
+In `Integrations & services` add `GitHub Auto-Deployment` and configure as desired.
 
